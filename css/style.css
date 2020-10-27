@@ -3,30 +3,33 @@
 */
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
 }
 
-html{
+html {
     box-sizing: border-box;
 }
+
 /*
     END RESET 
 */
 
-body{
+body {
     background-color: #22223b;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     font-size: 1.2rem;
 }
-.container{
+
+.container {
     margin: 3rem;
 }
-.header__title{
+
+.header__title {
     display: block;
     text-align: center;
     line-height: 1.5;
@@ -35,39 +38,74 @@ body{
     font-weight: 400;
     font-size: 3.2rem;
 }
-.service{
+
+.service {
     display: flex;
     margin-top: 1.5rem;
     justify-content: space-between;
 }
-.service__item{
+
+.service__item {
     padding: 1.5rem;
-    flex: 1;
+    flex: 0 0 1;
+    margin: 1rem;
 }
-.service__item_title{
+
+.service__item_title {
     font-weight: 400;
     font-size: 2rem;
     padding: .5rem 0;
     margin-bottom: 1rem;
 }
-.service__item_desp{
+
+.service__item_desp {
     font-weight: 200;
     line-height: 1.3;
     margin-bottom: 1rem;
 }
-.service__list{
+
+.service__list {
     list-style: none;
     margin-bottom: 1rem;
     padding-left: 2rem;
 }
-.service__list_item{
+
+.service__list_item {
     padding: 0.5rem 0;
 }
-.title{
+
+.title {
     text-transform: uppercase;
     font-style: italic;
 }
-.under_matain{
+
+.under_matain {
     color: #c9ada7;
     text-align: center;
+}
+
+/* small & media devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+    body{
+        font-size: 1rem;
+    }
+    .container{
+        margin: 1rem;
+    }
+    .header__title {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        word-spacing: 0.5rem;
+    }
+
+    .service {
+        flex-wrap: wrap;
+    }
+
+    .service__item {
+        margin: .5rem;
+        padding: 1rem;
+        flex-grow: unset;
+    }
 }
