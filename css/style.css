@@ -28,7 +28,7 @@ body {
 .container {
     margin: 3rem;
 }
-
+/* HEADER */
 .header__title {
     display: block;
     text-align: center;
@@ -38,7 +38,7 @@ body {
     font-weight: 400;
     font-size: 3.2rem;
 }
-
+/* END HEADER */
 .service {
     display: flex;
     margin-top: 1.5rem;
@@ -56,6 +56,7 @@ body {
     font-size: 2rem;
     padding: .5rem 0;
     margin-bottom: 1rem;
+    color: #c9ada7;
 }
 
 .service__item_desp {
@@ -83,6 +84,29 @@ body {
     color: #c9ada7;
     text-align: center;
 }
+/*End SERVICES*/
+
+/* SOCIAL LINK */
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.social__link {
+    flex: 0 0 1;
+    display: block;
+    margin: .5rem;
+}
+.social__link-svg{
+    width: 2rem;
+    height: 2rem;
+    fill: #f2e9e4;
+}
+.social__link-svg:hover{
+    fill: #9a8c98;
+}
+
 
 /* small & media devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
