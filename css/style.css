@@ -105,7 +105,14 @@ body {
 .under-line{
     border-bottom: 1px dashed var(--color-light-2);
 }
-
+.text-lower{
+    text-transform: lowercase;
+}
+.link{  
+    color:var(--color-secondary-2);
+    text-decoration: none;
+    font-weight: 400;
+}
 .under_matain {
     color: #c9ada7;
     text-align: center;
@@ -121,8 +128,18 @@ body {
 }
 .social__link {
     flex: 0 0 1;
-    display: block;
+    display: flex;
     margin: .5rem;
+    align-items: center;
+}
+.social__link-email{
+    font-size: 1rem;
+}
+.social__link-email-svg{
+    width: 2rem;
+    height: 2rem;
+    fill:var(--color-light-2);
+    margin-right: .5rem;
 }
 .social__link-svg{
     width: 2rem;
@@ -158,5 +175,8 @@ body {
         padding: 1rem;
         flex-basis: 100%;
         flex-grow: unset;
+    }
+    .social{
+        flex-wrap: wrap;
     }
 }
