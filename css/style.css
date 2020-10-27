@@ -70,11 +70,16 @@ body {
     padding: .5rem 0;
     margin-bottom: .5rem;
 }
-
+.service__item_lable{
+    font-weight: 200;
+    word-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-secondary-2);
+}
 .service__item_desp {
     font-weight: 200;
     line-height: 1.5;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .service__list {
@@ -83,7 +88,6 @@ body {
     padding-left: 2rem;
     text-transform: capitalize;
 }
-
 .service__list_item {
    padding: 0.3rem;
 }
@@ -95,6 +99,13 @@ body {
 .color-secondary{
     color: var(--color-secondary-1);
 }
+.color-secondary-2{
+    color: var(--color-secondary-2);
+}
+.under-line{
+    border-bottom: 1px dashed var(--color-light-2);
+}
+
 .under_matain {
     color: #c9ada7;
     text-align: center;
