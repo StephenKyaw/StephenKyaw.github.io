@@ -1,2 +1,2 @@
 # Portfolio 
-- https://kyawmyoaung-dev.github.io
+- https://johnathanmyoaung.github.io
